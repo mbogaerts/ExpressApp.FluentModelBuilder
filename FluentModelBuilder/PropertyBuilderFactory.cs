@@ -1,6 +1,6 @@
 ﻿using DevExpress.ExpressApp.DC;
 
-namespace Para.FluentModelBuilder.XAF
+namespace ExpressApp.FluentModelBuilder.XAF
 {
     public static class PropertyBuilderFactory
     {

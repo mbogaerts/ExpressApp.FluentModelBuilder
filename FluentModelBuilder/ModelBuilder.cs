@@ -6,7 +6,7 @@ using DevExpress.ExpressApp.DC;
 using DevExpress.ExpressApp.Model;
 using DevExpress.Persistent.Base;
 
-namespace Para.FluentModelBuilder.XAF
+namespace ExpressApp.FluentModelBuilder.XAF
 {
     public static class ModelBuilder
     {
@@ -32,7 +32,7 @@ namespace Para.FluentModelBuilder.XAF
     
         public readonly Fields<T> _Fields;
 
-        internal readonly List<IBuilder> _Builders = new List<IBuilder>();
+        public readonly List<IBuilder> _Builders = new List<IBuilder>();
 
         public ModelBuilder(ITypesInfo typesInfo)
             : this(typesInfo.FindTypeInfo<T>())
@@ -77,6 +77,32 @@ namespace Para.FluentModelBuilder.XAF
         public ModelBuilder<T> HasCaption(string caption)
         {
             return WithModelDefault(ModelDefaultKeys.Caption, caption);
+        }
+
+        public ModelBuilder<T> IsNavigationItem(string groupName)
+        {
+            return WithAttribute(new NavigationItemAttribute(groupName));
+        }
+
+        public ModelBuilder<T> HasListViewFindPanel()
+        {
+            return WithAttribute(new ListViewFindPanelAttribute(true));
+        }
+
+        //DefaultListViewOptions
+        public ModelBuilder<T> HasDefaultListViewOptions(MasterDetailMode masterDetailMode)
+        {
+            return WithAttribute(new DefaultListViewOptionsAttribute(masterDetailMode));
+        }
+
+        public ModelBuilder<T> HasDefaultListViewOptions(bool allowEdit, NewItemRowPosition newItemRowPosition)
+        {
+            return WithAttribute(new DefaultListViewOptionsAttribute(allowEdit, newItemRowPosition));
+        }
+
+        public ModelBuilder<T> HasDefaultListViewOptions(MasterDetailMode masterDetailMode, bool allowEdit, NewItemRowPosition newItemRowPosition)
+        {
+            return WithAttribute(new DefaultListViewOptionsAttribute(masterDetailMode,allowEdit, newItemRowPosition));
         }
 
         public ModelBuilder<T> WithModelDefault(string propertyName, string propertyValue)

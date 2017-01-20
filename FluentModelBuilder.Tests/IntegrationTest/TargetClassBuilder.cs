@@ -1,9 +1,9 @@
 ﻿using DevExpress.Data.Filtering;
 using DevExpress.ExpressApp.DC;
-using Para.FluentModelBuilder.ConditionalAppearance;
-using Para.FluentModelBuilder.XAF;
+using ExpressApp.FluentModelBuilder.ConditionalAppearance;
+using ExpressApp.FluentModelBuilder.XAF;
 
-namespace Para.FluentModelBuilder.Tests.IntegrationTest
+namespace ExpressApp.FluentModelBuilder.Tests.IntegrationTest
 {
     class TargetClassBuilder : ModelBuilder<TargetClass>
     {

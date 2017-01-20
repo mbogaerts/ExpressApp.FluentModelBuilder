@@ -6,11 +6,11 @@ using DevExpress.ExpressApp.Editors;
 using FakeItEasy;
 using FluentAssertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Para.FluentModelBuilder.ConditionalAppearance;
-using Para.FluentModelBuilder.XAF;
+using ExpressApp.FluentModelBuilder.ConditionalAppearance;
+using ExpressApp.FluentModelBuilder.XAF;
 
 // ReSharper disable InconsistentNaming
-namespace Para.FluentModelBuilder.Tests.ConditionalAppearanceTests
+namespace ExpressApp.FluentModelBuilder.Tests.ConditionalAppearanceTests
 {
     public static class ConditionalAppearancePropertyBuilderHelpers
     {
@@ -44,7 +44,7 @@ namespace Para.FluentModelBuilder.Tests.ConditionalAppearanceTests
         {
             _AppearanceBuilder.BuildAsBuilder();
 
-            _AppearanceBuilder._Attribute.Id.Should().Be("Para.FluentModelBuilder.Tests.TargetClass.OneToReferencedTarget.Visiblity");
+            _AppearanceBuilder._Attribute.Id.Should().Be("ExpressApp.FluentModelBuilder.Tests.TargetClass.OneToReferencedTarget.Visiblity");
         }
 
         [TestMethod]

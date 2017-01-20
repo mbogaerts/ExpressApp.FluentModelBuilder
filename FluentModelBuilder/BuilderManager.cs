@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Para.FluentModelBuilder.XAF
+namespace ExpressApp.FluentModelBuilder.XAF
 {
     public class BuilderManager : IBuilderManager
     {

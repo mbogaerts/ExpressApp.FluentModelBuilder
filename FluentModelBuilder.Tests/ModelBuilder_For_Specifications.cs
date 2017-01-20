@@ -3,10 +3,10 @@ using DevExpress.ExpressApp.DC;
 using FakeItEasy;
 using FluentAssertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Para.FluentModelBuilder.XAF;
+using ExpressApp.FluentModelBuilder.XAF;
 
 // ReSharper disable InconsistentNaming
-namespace Para.FluentModelBuilder.Tests
+namespace ExpressApp.FluentModelBuilder.Tests
 {
     [TestClass]
     public class ModelBuilder_For_Specifications

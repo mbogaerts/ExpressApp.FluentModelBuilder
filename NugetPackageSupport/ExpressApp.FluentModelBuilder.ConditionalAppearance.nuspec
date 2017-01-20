@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
-        <id>Para.FluentModelBuilder.ConditionalAppearance</id>
+        <id>ExpressApp.FluentModelBuilder.ConditionalAppearance</id>
         <version>1.0.0</version>
         <title />
         <authors>m.grundner</authors>
@@ -10,11 +10,11 @@
         <iconUrl>http://www.paragraph-software.at/bundles/paragraph/images/favicon.ico</iconUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>Fluent Model Builder for the DevExpress.ExpressApp.ContitionalAppearanceModule</description>
-      <dependencies>
-        <dependency id="Para.FluentModelBuilder.XAF" version="1.0.0" />
-      </dependencies>
+        <dependencies>
+            <dependency id="ExpressApp.FluentModelBuilder.XAF" version="1.0.0" />
+        </dependencies>
     </metadata>
-  <files>
-    <file src="Para.FluentModelBuilder.ConditionalAppearance.dll" target="lib\net40" />
-  </files>
+    <files>
+        <file src="bin\debug\ExpressApp.FluentModelBuilder.ConditionalAppearance.dll" target="lib\net40" />
+    </files>
 </package>

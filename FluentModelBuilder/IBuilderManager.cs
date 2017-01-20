@@ -1,4 +1,4 @@
-﻿namespace Para.FluentModelBuilder.XAF
+﻿namespace ExpressApp.FluentModelBuilder.XAF
 {
     public interface IBuilderManager : IBuilder
     {

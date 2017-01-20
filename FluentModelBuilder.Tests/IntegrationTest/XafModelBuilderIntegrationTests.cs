@@ -3,7 +3,7 @@ using DevExpress.ExpressApp.DC;
 using FakeItEasy;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace Para.FluentModelBuilder.Tests.IntegrationTest
+namespace ExpressApp.FluentModelBuilder.Tests.IntegrationTest
 {
     [TestClass]
     public class XafModelBuilderIntegrationTests

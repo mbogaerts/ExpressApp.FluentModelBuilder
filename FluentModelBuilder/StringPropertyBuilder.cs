@@ -1,4 +1,4 @@
-﻿namespace Para.FluentModelBuilder.XAF
+﻿namespace ExpressApp.FluentModelBuilder.XAF
 {
     public static class StringPropertyBuilder
     {

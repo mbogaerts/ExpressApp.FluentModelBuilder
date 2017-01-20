@@ -6,8 +6,8 @@
     <ProjectGuid>{3EA0DA06-F5A5-43C8-AD18-76E1C106A1D2}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Para.FluentModelBuilder.Tests</RootNamespace>
-    <AssemblyName>Para.FluentModelBuilder.Tests</AssemblyName>
+    <RootNamespace>ExpressApp.FluentModelBuilder.Tests</RootNamespace>
+    <AssemblyName>ExpressApp.FluentModelBuilder.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -41,15 +41,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <SignAssembly>true</SignAssembly>
+    <SignAssembly>false</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
-    <AssemblyOriginatorKeyFile>paraOfficeSignKey.pfx</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DevExpress.Data.v12.2" />
-    <Reference Include="DevExpress.ExpressApp.ConditionalAppearance.v12.2" />
-    <Reference Include="DevExpress.ExpressApp.v12.2" />
+    <Reference Include="DevExpress.Data.v16.1" />
+    <Reference Include="DevExpress.ExpressApp.ConditionalAppearance.v16.1" />
+    <Reference Include="DevExpress.ExpressApp.v16.1" />
+    <Reference Include="DevExpress.Persistent.Base.v16.1" />
     <Reference Include="FakeItEasy">
       <HintPath>..\packages\FakeItEasy.1.13.0\lib\net40\FakeItEasy.dll</HintPath>
     </Reference>
@@ -95,18 +97,17 @@
     <Compile Include="WithPublicCtorAttribute.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\FluentModelBuilder.ConditionalAppearance\Para.FluentModelBuilder.ConditionalAppearance.csproj">
+    <ProjectReference Include="..\FluentModelBuilder.ConditionalAppearance\ExpressApp.FluentModelBuilder.ConditionalAppearance.csproj">
       <Project>{18bf649e-4482-4eb2-9746-fdea9a1940c9}</Project>
-      <Name>Para.FluentModelBuilder.ConditionalAppearance</Name>
+      <Name>ExpressApp.FluentModelBuilder.ConditionalAppearance</Name>
     </ProjectReference>
-    <ProjectReference Include="..\FluentModelBuilder\Para.FluentModelBuilder.XAF.csproj">
+    <ProjectReference Include="..\FluentModelBuilder\ExpressApp.FluentModelBuilder.XAF.csproj">
       <Project>{ee0cefb7-2b83-4d7a-9657-dffbb6556005}</Project>
-      <Name>Para.FluentModelBuilder.XAF</Name>
+      <Name>ExpressApp.FluentModelBuilder.XAF</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-    <None Include="paraOfficeSignKey.pfx" />
   </ItemGroup>
   <ItemGroup />
   <Choose>

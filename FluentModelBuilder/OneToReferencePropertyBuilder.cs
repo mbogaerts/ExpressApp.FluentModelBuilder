@@ -3,7 +3,7 @@ using System.Linq.Expressions;
 using DevExpress.Data.Filtering;
 using DevExpress.Persistent.Base;
 
-namespace Para.FluentModelBuilder.XAF
+namespace ExpressApp.FluentModelBuilder.XAF
 {
     public static class OneToReferencePropertyBuilder
     {

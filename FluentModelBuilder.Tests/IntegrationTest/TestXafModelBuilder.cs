@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using DevExpress.ExpressApp.DC;
-using Para.FluentModelBuilder.XAF;
+using ExpressApp.FluentModelBuilder.XAF;
 
-namespace Para.FluentModelBuilder.Tests.IntegrationTest
+namespace ExpressApp.FluentModelBuilder.Tests.IntegrationTest
 {
     class TestXafModelBuilder : XafBuilderManager
     {

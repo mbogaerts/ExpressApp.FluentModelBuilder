@@ -2,10 +2,10 @@
 using DevExpress.ExpressApp.Model;
 using FakeItEasy;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Para.FluentModelBuilder.XAF;
+using ExpressApp.FluentModelBuilder.XAF;
 using Ploeh.AutoFixture;
 
-namespace Para.FluentModelBuilder.Tests
+namespace ExpressApp.FluentModelBuilder.Tests
 {
     [TestClass]
     public class ScalarPropertyBuilderSpecifications

@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Para.FluentModelBuilder.Tests")]
+[assembly: AssemblyTitle("ExpressApp.FluentModelBuilder.Tests")]
 [assembly: AssemblyDescription("Unittests for the Fluent Model Builders")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Paragraph-Software GmbH")]
-[assembly: AssemblyProduct("Para.FluentModelBuilders")]
+[assembly: AssemblyProduct("ExpressApp.FluentModelBuilders")]
 [assembly: AssemblyCopyright("Copyright ©  2013")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

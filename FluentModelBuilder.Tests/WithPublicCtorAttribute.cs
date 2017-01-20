@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Para.FluentModelBuilder.Tests
+namespace ExpressApp.FluentModelBuilder.Tests
 {
     class WithPublicCtorAttribute : Attribute
     {

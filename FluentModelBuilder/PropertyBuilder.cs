@@ -4,7 +4,7 @@ using DevExpress.ExpressApp.DC;
 using DevExpress.ExpressApp.Model;
 using DevExpress.Persistent.Base;
 
-namespace Para.FluentModelBuilder.XAF
+namespace ExpressApp.FluentModelBuilder.XAF
 {
     public class PropertyBuilder<T, TType> : IBuilderManager
     {
@@ -12,7 +12,7 @@ namespace Para.FluentModelBuilder.XAF
  
         public readonly IMemberInfo MemberInfo;
 
-        internal readonly List<IBuilder> _Builders = new List<IBuilder>();
+        public readonly List<IBuilder> _Builders = new List<IBuilder>();
 
         public PropertyBuilder(IMemberInfo memberInfo)
         {
@@ -48,6 +48,8 @@ namespace Para.FluentModelBuilder.XAF
         {
             return WithModelDefault(ModelDefaultKeys.Caption, caption);
         }
+
+        
 
         public PropertyBuilder<T, TType> HasDisplayFormat(string displayFormat)
         {

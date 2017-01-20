@@ -1,4 +1,4 @@
-Para.FluentModelBuilder
+ExpressApp.FluentModelBuilder
 =======================
 
 Fluent Model Builder for the DevExpress.ExpressApp Framework
@@ -336,11 +336,11 @@ Currently it is easy as brush your teeth using NuGet:
 
 - For XAF-Only Attributes:
 
-`Install-Package Para.FluentModelBuilder.XAF`
+`Install-Package ExpressApp.FluentModelBuilder.XAF`
 
 - For the ConditionalAppearance part use:
 
-`Install-Package Para.FluentModelBuilder.ConditionalAppearance`
+`Install-Package ExpressApp.FluentModelBuilder.ConditionalAppearance`
 
 ##Questions?##
 

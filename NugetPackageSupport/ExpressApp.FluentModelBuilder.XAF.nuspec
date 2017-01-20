@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <id>Para.FluentModelBuilder.XAF</id>
+    <id>ExpressApp.FluentModelBuilder.XAF</id>
     <version>1.0.0</version>
     <title />
     <authors>m.grundner</authors>
@@ -12,6 +12,6 @@
     <description>Fluent Model Builder for the DevExpress.ExpressApp Framework</description>
   </metadata>
   <files>
-    <file src="Para.FluentModelBuilder.XAF.dll" target="lib\net40" />
+    <file src="ExpressApp.FluentModelBuilder.XAF.dll" target="lib\net40" />
   </files>
 </package>

@@ -5,9 +5,9 @@ using DevExpress.Data.Filtering;
 using DevExpress.ExpressApp;
 using DevExpress.ExpressApp.ConditionalAppearance;
 using DevExpress.ExpressApp.Editors;
-using Para.FluentModelBuilder.XAF;
+using ExpressApp.FluentModelBuilder.XAF;
 
-namespace Para.FluentModelBuilder.ConditionalAppearance
+namespace ExpressApp.FluentModelBuilder.ConditionalAppearance
 {
     public static class ConditionalAppearancePropertyBuilder
     {
@@ -39,7 +39,7 @@ namespace Para.FluentModelBuilder.ConditionalAppearance
 
         private string _Context;
 
-        internal AppearanceAttribute _Attribute;
+        public AppearanceAttribute _Attribute;
 
         public ConditionalAppearancePropertyBuilder(PropertyBuilder<TProp, T> builder, string shortId)
         {

@@ -1,24 +1,26 @@
-﻿namespace Para.FluentModelBuilder.XAF
+﻿namespace ExpressApp.FluentModelBuilder.XAF
 {
     // ReSharper disable InconsistentNaming
-    internal static class ModelDefaultKeys
+    public static class ModelDefaultKeys
     {
-        internal const string Caption = "Caption";
+        public const string Caption = "Caption";
+
+        public const string Index = "Index";
         
-        internal const string DisplayFormat = "DisplayFormat";
+        public const string DisplayFormat = "DisplayFormat";
 
-        internal const string PropertyEditorType = "PropertyEditorType";
+        public const string PropertyEditorType = "PropertyEditorType";
 
-        internal static class EditMask
+        public static class EditMask
         {
-            internal const string EditMaskKey = "EditMask";
-            internal const string EditMaskType = "EditMaskType";
+            public const string EditMaskKey = "EditMask";
+            public const string EditMaskType = "EditMaskType";
 
-            internal static class Types
+            public static class Types
             {
-                internal const string RegEx = "RegEx";    
+                public const string RegEx = "RegEx";    
             }
         }
-        
+
     }
 }

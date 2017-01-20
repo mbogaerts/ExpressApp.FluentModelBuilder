@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>ExpressApp.FluentModelBuilder.ConditionalAppearance</id>
+        <version>16.1.8-beta1</version>
+        <title />
+        <authors>M. Bogaerts</authors>
+        <owners>Manuel Grundner</owners>
+        <projectUrl>http://www.3waysoftware.be</projectUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>Fluent Model Builder for the DevExpress.ExpressApp.ContitionalAppearanceModule  Special Thanks to Manuel Grundner (http://www.paragraph-software.at)</description>
+        <dependencies>
+            <dependency id="ExpressApp.FluentModelBuilder.XAF" version="1.0.0" />
+        </dependencies>
+    </metadata>
+    <files>
+        <file src="bin\debug\ExpressApp.FluentModelBuilder.ConditionalAppearance.dll" target="lib\net40" />
+    </files>
+</package>
