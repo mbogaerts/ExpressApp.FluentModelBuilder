@@ -6,7 +6,6 @@
         <title />
         <authors>M. Bogaerts</authors>
         <owners>Manuel Grundner</owners>
-        <projectUrl>http://www.3waysoftware.be</projectUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>Fluent Model Builder for the DevExpress.ExpressApp.ContitionalAppearanceModule  Special Thanks to Manuel Grundner (http://www.paragraph-software.at)</description>
         <dependencies>
