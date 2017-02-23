@@ -43,8 +43,9 @@
     </AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DevExpress.Data.v16.1" />
-    <Reference Include="DevExpress.ExpressApp.v16.1" />
+    <Reference Include="DevExpress.Data.v16.2" />
+    <Reference Include="DevExpress.ExpressApp.v16.2" />
+    <Reference Include="DevExpress.Persistent.Base.v16.2, Version=16.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -70,7 +71,11 @@
     <Compile Include="XafBuilderManager.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="ExpressApp.FluentModelBuilder.XAF.nuspec" />
+    <None Include="ExpressApp.FluentModelBuilder.XAF.nuspec">
+      <SubType>Designer</SubType>
+    </None>
+    <Compile Include="ModelBuilder.Validation.cs" />
+    <Compile Include="ModelBuilder.ListViewFilter.cs" />
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
