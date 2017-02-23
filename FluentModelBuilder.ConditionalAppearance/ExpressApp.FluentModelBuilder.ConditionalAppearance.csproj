@@ -43,10 +43,10 @@
     </AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DevExpress.Data.v16.1" />
-    <Reference Include="DevExpress.ExpressApp.ConditionalAppearance.v16.1" />
-    <Reference Include="DevExpress.ExpressApp.v16.1" />
-    <Reference Include="DevExpress.Persistent.Base.v16.1" />
+    <Reference Include="DevExpress.Data.v16.2" />
+    <Reference Include="DevExpress.ExpressApp.ConditionalAppearance.v16.2" />
+    <Reference Include="DevExpress.ExpressApp.v16.2" />
+    <Reference Include="DevExpress.Persistent.Base.v16.2" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
@@ -67,7 +67,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="ExpressApp.FluentModelBuilder.ConditionalAppearance.nuspec" />
+    <None Include="ExpressApp.FluentModelBuilder.ConditionalAppearance.nuspec">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

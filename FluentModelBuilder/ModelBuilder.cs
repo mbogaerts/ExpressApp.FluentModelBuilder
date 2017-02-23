@@ -4,6 +4,7 @@ using System.Linq.Expressions;
 using DevExpress.ExpressApp;
 using DevExpress.ExpressApp.DC;
 using DevExpress.ExpressApp.Model;
+using DevExpress.ExpressApp.SystemModule;
 using DevExpress.Persistent.Base;
 
 namespace ExpressApp.FluentModelBuilder.XAF
@@ -26,7 +27,7 @@ namespace ExpressApp.FluentModelBuilder.XAF
         }
     }
 
-    public class ModelBuilder<T> : IBuilderManager, ITypeInfoProvider
+    public partial class ModelBuilder<T> : IBuilderManager, ITypeInfoProvider
     {
         public ITypeInfo TypeInfo { get; private set; }
     
