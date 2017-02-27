@@ -6,7 +6,7 @@ using DevExpress.Persistent.Base;
 
 namespace ExpressApp.FluentModelBuilder.XAF
 {
-    public class PropertyBuilder<T, TType> : IBuilderManager
+    public partial class PropertyBuilder<T, TType> : IBuilderManager
     {
         public readonly Fields<TType> _Fields = new Fields<TType>();
  
