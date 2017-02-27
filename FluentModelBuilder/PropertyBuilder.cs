@@ -174,6 +174,10 @@ namespace ExpressApp.FluentModelBuilder.XAF
             return WithAttribute(new EditorAliasAttribute(editorAlias));
         }
 
+        public PropertyBuilder<T, TType> HasIndex(int index)
+        {
+            return WithAttribute(new IndexAttribute(index));
+        }
 
 
 
