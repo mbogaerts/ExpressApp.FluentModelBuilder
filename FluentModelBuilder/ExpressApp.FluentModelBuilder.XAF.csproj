@@ -65,6 +65,7 @@
     <Compile Include="OneToReferencePropertyBuilder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PropertyBuilder.cs" />
+    <Compile Include="PropertyBuilder.Validation.cs" />
     <Compile Include="PropertyBuilderFactory.cs" />
     <Compile Include="ScalarPropertyBuilder.cs" />
     <Compile Include="StringPropertyBuilder.cs" />

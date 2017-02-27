@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>ExpressApp.FluentModelBuilder.XAF</id>
-    <version>16.2.4-beta2</version>
+    <version>16.2.4-beta3</version>
     <title />
     <authors>M. Bogaerts</authors>
       <owners>Manuel Grundner</owners>
