@@ -168,5 +168,15 @@ namespace ExpressApp.FluentModelBuilder.XAF
         {
             _Builders.ForEach(b => b.Build());
         }
+
+        public PropertyBuilder<T, TType> HasEditorAlias(string editorAlias)
+        {
+            return WithAttribute(new EditorAliasAttribute(editorAlias));
+        }
+
+
+
+
+
     }
 }
