@@ -10,37 +10,7 @@ namespace ExpressApp.FluentModelBuilder.XAF
 {
     public partial class PropertyBuilder<T, TType>
     {
-        #region HasRuleCriteria
-        public PropertyBuilder<T, TType> HasRuleCriteria(string criteria)
-        {
-            return WithAttribute(new RuleCriteriaAttribute(criteria));
-        }
-
-        public PropertyBuilder<T, TType> HasRuleCriteria(DefaultContexts targetContext, string criteria)
-        {
-            return WithAttribute(new RuleCriteriaAttribute(targetContext, criteria));
-        }
-
-        public PropertyBuilder<T, TType> HasRuleCriteria(string id, DefaultContexts targetContext, string criteria)
-        {
-            return WithAttribute(new RuleCriteriaAttribute(id, targetContext, criteria));
-        }
-
-        public PropertyBuilder<T, TType> HasRuleCriteria(string id, string targetContextIDs, string criteria)
-        {
-            return WithAttribute(new RuleCriteriaAttribute(id, targetContextIDs, criteria));
-        }
-
-        public PropertyBuilder<T, TType> HasRuleCriteria(string id, DefaultContexts targetContext, string criteria, string messageTemplate)
-        {
-            return WithAttribute(new RuleCriteriaAttribute(id, targetContext, criteria, messageTemplate));
-        }
-
-        public PropertyBuilder<T, TType> HasRuleCriteria(string id, string targetContextIDs, string criteria, string messageTemplate)
-        {
-            return WithAttribute(new RuleCriteriaAttribute(id, targetContextIDs, criteria, messageTemplate));
-        }
-        #endregion
+        
 
         #region HasRuleValueComparison
         public PropertyBuilder<T, TType> HasRuleValueComparison(ValueComparisonType operatorType, object rightOperand)
