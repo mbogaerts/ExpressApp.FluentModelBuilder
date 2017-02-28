@@ -179,8 +179,10 @@ namespace ExpressApp.FluentModelBuilder.XAF
             return WithAttribute(new IndexAttribute(index));
         }
 
-
-
+        public PropertyBuilder<T, TType> HasCalculated(string expression)
+        {
+            return WithAttribute(new CalculatedAttribute(expression));
+        }
 
     }
 }
