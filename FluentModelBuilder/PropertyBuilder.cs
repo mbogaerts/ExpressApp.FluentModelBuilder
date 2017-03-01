@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using DevExpress.ExpressApp.DC;
+using DevExpress.ExpressApp.Filtering;
 using DevExpress.ExpressApp.Model;
 using DevExpress.Persistent.Base;
 
@@ -9,7 +10,7 @@ namespace ExpressApp.FluentModelBuilder.XAF
     public partial class PropertyBuilder<T, TType> : IBuilderManager
     {
         public readonly Fields<TType> _Fields = new Fields<TType>();
- 
+
         public readonly IMemberInfo MemberInfo;
 
         public readonly List<IBuilder> _Builders = new List<IBuilder>();
@@ -49,7 +50,7 @@ namespace ExpressApp.FluentModelBuilder.XAF
             return WithModelDefault(ModelDefaultKeys.Caption, caption);
         }
 
-        
+
 
         public PropertyBuilder<T, TType> HasDisplayFormat(string displayFormat)
         {
@@ -179,10 +180,16 @@ namespace ExpressApp.FluentModelBuilder.XAF
             return WithAttribute(new IndexAttribute(index));
         }
 
-        public PropertyBuilder<T, TType> HasCalculated(string expression)
+        public PropertyBuilder<T, TType> IsCalculated(string expression)
         {
             return WithAttribute(new CalculatedAttribute(expression));
         }
+
+        public PropertyBuilder<T, TType> HasSearchMemberOptions(SearchMemberMode searchMemberMode)
+        {
+            return WithAttribute(new SearchMemberOptionsAttribute(searchMemberMode));
+        }
+        //SearchMemberOptions
 
     }
 }
