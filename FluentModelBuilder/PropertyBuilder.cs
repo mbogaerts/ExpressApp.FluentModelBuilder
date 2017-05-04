@@ -92,13 +92,22 @@ namespace ExpressApp.FluentModelBuilder.XAF
             return
                 IsVisibleInDetailView(isVisible)
                 .IsVisibleInListView(isVisible)
-                .IsVisibleInLookupListView();
+                .IsVisibleInLookupListView(isVisible);
         }
 
         public PropertyBuilder<T, TType> IsNotVisibleInAnyView()
         {
             return IsVisibleInAnyView(false);
         }
+
+        public PropertyBuilder<T, TType> IsOnlyVisibleInDetailView()
+        {
+            return
+                IsVisibleInDetailView()
+                .IsNotVisibleInListView()
+                .IsNotVisibleInLookupListView();
+        }
+
 
         public PropertyBuilder<T, TType> UsingPropertyEditor(string propertyEditorTypeName)
         {
