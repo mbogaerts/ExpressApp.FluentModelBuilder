@@ -73,12 +73,45 @@ namespace ExpressApp.FluentModelBuilder.XAF
         }
         #endregion
 
-        
+        #region RuleIsReferenced
+        public ModelBuilder<T> HasRuleIsReferenced(Type looksFor, string refrencePropertyName, bool invertResult = false)
+        {
+            return WithAttribute(new RuleIsReferencedAttribute(looksFor, refrencePropertyName) { InvertResult = invertResult });
+        }
 
-        
+        public ModelBuilder<T> HasRuleIsReferenced(DefaultContexts targetContext, Type looksFor, string refrencePropertyName, bool invertResult = false)
+        {
+            return WithAttribute(new RuleIsReferencedAttribute(targetContext, looksFor, refrencePropertyName) { InvertResult = invertResult });
+        }
 
-        
+        public ModelBuilder<T> HasRuleIsReferenced(string id, DefaultContexts targetContext, Type looksFor, string refrencePropertyName, bool invertResult = false)
+        {
+            return WithAttribute(new RuleIsReferencedAttribute(id, targetContext, looksFor, refrencePropertyName) { InvertResult = invertResult });
+        }
 
-        
+        public ModelBuilder<T> HasRuleIsReferenced(string id, string targetContextIDs, Type looksFor, string refrencePropertyName, bool invertResult = false)
+        {
+            return WithAttribute(new RuleIsReferencedAttribute(id, targetContextIDs, looksFor, refrencePropertyName) { InvertResult = invertResult });
+        }
+
+        public ModelBuilder<T> HasRuleIsReferenced(string id, DefaultContexts targetContext, Type looksFor, string refrencePropertyName, string messageTemplate, bool invertResult = false)
+        {
+            return WithAttribute(new RuleIsReferencedAttribute(id, targetContext, looksFor, refrencePropertyName, messageTemplate) { InvertResult = invertResult });
+        }
+
+        public ModelBuilder<T> HasRuleIsReferenced(string id, string targetContextIDs, Type looksFor, string refrencePropertyName, string messageTemplate, bool invertResult = false)
+        {
+            return WithAttribute(new RuleIsReferencedAttribute(id, targetContextIDs, looksFor, refrencePropertyName, messageTemplate) { InvertResult = invertResult });
+        }
+
+
+        #endregion
+
+
+
+
+
+
+
     }
 }
