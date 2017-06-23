@@ -104,7 +104,41 @@ namespace ExpressApp.FluentModelBuilder.XAF
             return WithAttribute(new RuleIsReferencedAttribute(id, targetContextIDs, looksFor, refrencePropertyName, messageTemplate) { InvertResult = invertResult });
         }
 
+        public ModelBuilder<T> HasRuleIsReferenced(Type looksFor, string refrencePropertyName, CriteriaEvaluationBehavior criteriaEvaluationBehavior, bool invertResult = false)
+        {
+            return WithAttribute(new RuleIsReferencedAttribute(looksFor, refrencePropertyName) { CriteriaEvaluationBehavior = criteriaEvaluationBehavior,  InvertResult = invertResult });
+        }
 
+        public ModelBuilder<T> HasRuleIsReferenced(DefaultContexts targetContext, Type looksFor, string refrencePropertyName, CriteriaEvaluationBehavior criteriaEvaluationBehavior, bool invertResult = false)
+        {
+            return WithAttribute(new RuleIsReferencedAttribute(targetContext, looksFor, refrencePropertyName) { CriteriaEvaluationBehavior = criteriaEvaluationBehavior, InvertResult = invertResult });
+        }
+
+        public ModelBuilder<T> HasRuleIsReferenced(DefaultContexts targetContext, Type looksFor, string refrencePropertyName, CriteriaEvaluationBehavior criteriaEvaluationBehavior, string messageTemplate, bool invertResult = false)
+        {
+            return WithAttribute(new RuleIsReferencedAttribute("", targetContext, looksFor, refrencePropertyName, messageTemplate) { CriteriaEvaluationBehavior = criteriaEvaluationBehavior, InvertResult = invertResult });
+        }
+
+        public ModelBuilder<T> HasRuleIsReferenced(string id, DefaultContexts targetContext, Type looksFor, string refrencePropertyName, CriteriaEvaluationBehavior criteriaEvaluationBehavior, bool invertResult = false)
+        {
+            return WithAttribute(new RuleIsReferencedAttribute(id, targetContext, looksFor, refrencePropertyName) { CriteriaEvaluationBehavior = criteriaEvaluationBehavior, InvertResult = invertResult });
+        }
+
+        public ModelBuilder<T> HasRuleIsReferenced(string id, string targetContextIDs, Type looksFor, string refrencePropertyName, CriteriaEvaluationBehavior criteriaEvaluationBehavior, bool invertResult = false)
+        {
+            return WithAttribute(new RuleIsReferencedAttribute(id, targetContextIDs, looksFor, refrencePropertyName) { CriteriaEvaluationBehavior = criteriaEvaluationBehavior, InvertResult = invertResult });
+        }
+
+        public ModelBuilder<T> HasRuleIsReferenced(string id, DefaultContexts targetContext, Type looksFor, string refrencePropertyName, string messageTemplate, CriteriaEvaluationBehavior criteriaEvaluationBehavior, bool invertResult = false)
+        {
+            return WithAttribute(new RuleIsReferencedAttribute(id, targetContext, looksFor, refrencePropertyName, messageTemplate) { CriteriaEvaluationBehavior = criteriaEvaluationBehavior, InvertResult = invertResult });
+        }
+
+        public ModelBuilder<T> HasRuleIsReferenced(string id, string targetContextIDs, Type looksFor, string refrencePropertyName, string messageTemplate, CriteriaEvaluationBehavior criteriaEvaluationBehavior, bool invertResult = false)
+        {
+            return WithAttribute(new RuleIsReferencedAttribute(id, targetContextIDs, looksFor, refrencePropertyName, messageTemplate) { CriteriaEvaluationBehavior = criteriaEvaluationBehavior, InvertResult = invertResult });
+        }
+        
         #endregion
 
 
