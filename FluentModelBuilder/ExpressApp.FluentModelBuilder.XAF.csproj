@@ -43,9 +43,9 @@
     </AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DevExpress.Data.v16.2" />
-    <Reference Include="DevExpress.ExpressApp.v16.2" />
-    <Reference Include="DevExpress.Persistent.Base.v16.2" />
+    <Reference Include="DevExpress.Data.v16.2, Version=16.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.ExpressApp.v16.2, Version=16.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Persistent.Base.v16.2, Version=16.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -61,6 +61,7 @@
     <Compile Include="IBuilderManager.cs" />
     <Compile Include="ITypeInfoProvider.cs" />
     <Compile Include="ModelBuilder.cs" />
+    <Compile Include="ModelBuilder.ModelDefaults.cs" />
     <Compile Include="ModelDefaultKeys.cs" />
     <Compile Include="OneToReferencePropertyBuilder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

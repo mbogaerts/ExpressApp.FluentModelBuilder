@@ -13,7 +13,7 @@ namespace ExpressApp.FluentModelBuilder.XAF
     {
         public static ITypeInfo FindTypeInfo<T>(this ITypesInfo typesInfo)
         {
-            return typesInfo.FindTypeInfo(typeof (T));
+            return typesInfo.FindTypeInfo(typeof(T));
         }
 
         public static ModelBuilder<T> Create<T>(ITypesInfo typesInfo)
@@ -30,7 +30,7 @@ namespace ExpressApp.FluentModelBuilder.XAF
     public partial class ModelBuilder<T> : IBuilderManager, ITypeInfoProvider
     {
         public ITypeInfo TypeInfo { get; private set; }
-    
+
         public readonly Fields<T> _Fields;
 
         public readonly List<IBuilder> _Builders = new List<IBuilder>();
@@ -38,7 +38,7 @@ namespace ExpressApp.FluentModelBuilder.XAF
         public ModelBuilder(ITypesInfo typesInfo)
             : this(typesInfo.FindTypeInfo<T>())
         {
-            
+
         }
 
         public ModelBuilder(ITypeInfo typeInfo)
@@ -51,7 +51,7 @@ namespace ExpressApp.FluentModelBuilder.XAF
 
         protected virtual void BuildUp()
         {
-            
+
         }
 
         public ModelBuilder<T> WithAttribute(Attribute attribute)
@@ -73,11 +73,6 @@ namespace ExpressApp.FluentModelBuilder.XAF
 
             TypeInfo.AddAttribute(attribute);
             return this;
-        }
-
-        public ModelBuilder<T> HasCaption(string caption)
-        {
-            return WithModelDefault(ModelDefaultKeys.Caption, caption);
         }
 
         public ModelBuilder<T> IsNavigationItem(string groupName)
@@ -103,12 +98,7 @@ namespace ExpressApp.FluentModelBuilder.XAF
 
         public ModelBuilder<T> HasDefaultListViewOptions(MasterDetailMode masterDetailMode, bool allowEdit, NewItemRowPosition newItemRowPosition)
         {
-            return WithAttribute(new DefaultListViewOptionsAttribute(masterDetailMode,allowEdit, newItemRowPosition));
-        }
-
-        public ModelBuilder<T> WithModelDefault(string propertyName, string propertyValue)
-        {
-            return WithAttribute(new ModelDefaultAttribute(propertyName, propertyValue));
+            return WithAttribute(new DefaultListViewOptionsAttribute(masterDetailMode, allowEdit, newItemRowPosition));
         }
 
         public ModelBuilder<T> HasImage(string imageName)
@@ -145,45 +135,7 @@ namespace ExpressApp.FluentModelBuilder.XAF
             return WithAttribute(new ObjectCaptionFormatAttribute("{0:" + _Fields.GetPropertyName(formatString) + "}"));
         }
 
-        public ModelBuilder<T> NotAllowingEdit()
-        {
-            return WithModelDefault("AllowEdit", "false");
-        }
 
-        public ModelBuilder<T> AllowingEdit()
-        {
-            return WithModelDefault("AllowEdit", "true");
-        }
-
-        public ModelBuilder<T> NotAllowingNew()
-        {
-            return WithModelDefault("AllowNew", "false");
-        }
-
-        public ModelBuilder<T> AllowingNew()
-        {
-            return WithModelDefault("AllowNew", "true");
-        }
-
-        public ModelBuilder<T> NotAllowingDelete()
-        {
-            return WithModelDefault("AllowDelete", "false");
-        }
-
-        public ModelBuilder<T> AllowingDelete()
-        {
-            return WithModelDefault("AllowDelete", "true");
-        }
-
-        public ModelBuilder<T> AllowingNothing()
-        {
-            return NotAllowingDelete().NotAllowingEdit().NotAllowingNew();
-        }
-
-        public ModelBuilder<T> AllowingEverything()
-        {
-            return AllowingDelete().AllowingEdit().AllowingNew();
-        }
 
         void IBuilderManager.AddBuilder(IBuilder builder)
         {

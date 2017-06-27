@@ -6,10 +6,12 @@
         public const string Caption = "Caption";
 
         public const string Index = "Index";
-        
+
         public const string DisplayFormat = "DisplayFormat";
 
         public const string PropertyEditorType = "PropertyEditorType";
+
+        public const string DefaultListViewShowAutoFilterRow = "DefaultListViewShowAutoFilterRow";
 
         public static class EditMask
         {
@@ -18,7 +20,7 @@
 
             public static class Types
             {
-                public const string RegEx = "RegEx";    
+                public const string RegEx = "RegEx";
             }
         }
 
