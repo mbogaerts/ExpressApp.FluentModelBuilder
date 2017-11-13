@@ -193,6 +193,10 @@ namespace ExpressApp.FluentModelBuilder.XAF
         {
             return WithAttribute(new CalculatedAttribute(expression));
         }
+        public PropertyBuilder<T, TType> IsAggregated()
+        {
+            return WithAttribute(new AggregatedAttribute());
+        }
 
         public PropertyBuilder<T, TType> HasSearchMemberOptions(SearchMemberMode searchMemberMode)
         {
